@@ -87,11 +87,11 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
+              "src/assets/",
               {
                 "glob": "bootstrap-icons.svg",
                 "input": "./node_modules/bootstrap-icons/",
-                "output": "/assets/"
+                "output": "./assets/"
               }
             ],
             "styles": [
