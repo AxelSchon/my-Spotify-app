@@ -1,15 +1,15 @@
 .circularButton {
-align-items: center;
-background-color: rgba(0,0,0,.7);
-border: none;
-border-radius: 50%;
-color: #fff;
-cursor: pointer;
-display: inline-flex;
-height: 32px;
-justify-content: center;
-position: relative;
-width: 32px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 32px;
+    justify-content: center;
+    position: relative;
+    width: 32px;
 }
 
 .SignUpButton {
@@ -39,7 +39,7 @@ width: 32px;
 .LogInButton {
     box-sizing: border-box;
     position: relative;
-    background-color: var(--background-base,#ffffff);
+    background-color: var(--background-base, #ffffff);
     border-radius: 500px;
     font-size: 1rem;
     font-weight: 700;
@@ -53,19 +53,8 @@ width: 32px;
     border: none;
 }
 
-.temp{
-    justify-content: center;
-    border-radius: 100%;
-    background-color: rgba(0, 0, 0, .7);
-    opacity: .6;
-    cursor: not-allowed;
-    height: 32px;
-    position: relative;
-    width: 32px;
-}
-
-#topNavbar{
+#topNavbar {
     opacity: 06;
-    background-color: #121212;
-    filter: (opacity=50);
+    background-color: #1a1a1a;
+    margin-left: auto;
 }

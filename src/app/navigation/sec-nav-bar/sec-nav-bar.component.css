@@ -1,0 +1,17 @@
+#sidebar{
+    opacity: 06;
+    background-color: #121212;
+    margin-left: auto;
+}
+
+#sidebarText{
+    font-size: 0.875rem;
+    color: #a7a7a7;
+}
+
+#spotifyLogo{
+    height: 50px;
+    fill: currentColor;
+    margin-top:20px;
+
+}
