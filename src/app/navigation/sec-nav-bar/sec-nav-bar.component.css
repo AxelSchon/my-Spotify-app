@@ -13,6 +13,9 @@
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
     
 }
+#sidebarText:hover{
+    color: #fff;
+}
 
 #sidebarIcon {
     width: 24px;

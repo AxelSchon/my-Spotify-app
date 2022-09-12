@@ -37,6 +37,11 @@
     justify-content: center;
 }
 
+.SignUpButton:hover{
+    transform: scale(1.04);
+    color:#fff;
+}
+
 .LogInButton {
     box-sizing: border-box;
     position: relative;
@@ -52,6 +57,11 @@
     padding-block: 8px;
     padding-inline: 32px;
     border: none;
+}
+
+.LogInButton:hover {
+    transform: scale(1.04);
+    background-color: var(--background-highlight,#f6f6f6);
 }
 
 #topNavbar {
