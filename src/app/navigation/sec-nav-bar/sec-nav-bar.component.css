@@ -8,10 +8,11 @@
     font-size: 0.875rem;
     color: #a7a7a7;
     margin-block: 0px;
-    padding-top: 8px;
+    padding-top: 6px;
+    padding-bottom: 0px;
     font-weight: 700;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
-    
+
 }
 #sidebarText:hover{
     color: #fff;
@@ -23,6 +24,22 @@
     fill: currentColor;
     border-radius: 10%;
 }
+
+#sidebarExtraText{
+    font-size: 0.6875rem;
+    color: #a7a7a7;
+    margin-block: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    padding-left: 8px;
+    padding-top: 6px;
+}
+
+#sidebarExtraText:hover{
+    text-decoration: underline;
+} 
 
 #spotifyLogo {
     height: 55px;
