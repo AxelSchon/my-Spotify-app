@@ -37,9 +37,9 @@
     justify-content: center;
 }
 
-.SignUpButton:hover{
+.SignUpButton:hover {
     transform: scale(1.04);
-    color:#fff;
+    color: #fff;
 }
 
 .LogInButton {
@@ -61,7 +61,7 @@
 
 .LogInButton:hover {
     transform: scale(1.04);
-    background-color: var(--background-highlight,#f6f6f6);
+    background-color: var(--background-highlight, #f6f6f6);
 }
 
 #topNavbar {

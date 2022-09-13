@@ -7,14 +7,14 @@
 #sidebarText {
     font-size: 0.875rem;
     color: #a7a7a7;
-    margin-block: 0px;
     padding-top: 6px;
     padding-bottom: 0px;
     font-weight: 700;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
 
 }
-#sidebarText:hover{
+
+#sidebarText:hover {
     color: #fff;
 }
 
@@ -22,10 +22,10 @@
     width: 24px;
     height: 24px;
     fill: currentColor;
-    border-radius: 10%;
+
 }
 
-#sidebarExtraText{
+#sidebarExtraText {
     font-size: 0.6875rem;
     color: #a7a7a7;
     margin-block: 0px;
@@ -37,9 +37,9 @@
     padding-top: 6px;
 }
 
-#sidebarExtraText:hover{
+#sidebarExtraText:hover {
     text-decoration: underline;
-} 
+}
 
 #spotifyLogo {
     height: 55px;
@@ -59,7 +59,7 @@
     padding-inline: 8px;
 }
 
-#SpotifyText{
+#SpotifyText {
     box-sizing: border-box;
     font-weight: 900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -73,6 +73,30 @@
     -moz-box-pack: center;
     justify-content: center;
 }
+
 #menu {
     margin-left: 8px;
+}
+
+.heart {
+    width: 12px;
+    height: 12px;
+    fill: #b3b3b3;
+    justify-content: center;
+    position: relative;
+    margin: 6px;
+    vertical-align: middle;
+
+}
+
+.heartBox {
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+    border-radius: 2px;
+    height: 24px;
+    width: 24px;
+
+}
+
+.t {
+    display: inline-block;
 }
