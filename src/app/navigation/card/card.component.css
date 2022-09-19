@@ -1,0 +1,37 @@
+.cardContainer {
+    --card-container-border-radius: clamp(4px, (var(--column-width, 0px) - 32px) * 0.025, 8px);
+    -webkit-box-flex: 1;
+    background: #181818;
+    border-radius: calc(var(--card-container-border-radius) + 2px);
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.cardImg{
+    height: 166px;
+    width: 166px;
+}
+
+.albumName {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    padding-block-end: 4px;
+    color: #ffff;
+}
+
+.artistName {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: var(--text-subdued, #6a6a6a);
+    font-style: normal;
+}

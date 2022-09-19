@@ -1,9 +1,83 @@
-.outerContainer{
-    background-image: linear-gradient(90deg,#af2896,#509bf5);
+.outerContainer {
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
     padding-left: 0%;
     margin-top: 0%;
 }
 
-.button{
+.firstParagraph {
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: #ffffff;
+}
 
+.secondParagraph {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: #ffffff;
+}
+
+.signUpFreeButton {
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--background-base, #ffffff);
+    border-radius: 500px;
+    font-size: 1rem;
+    font-weight: 700;
+    min-block-size: 48px;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    padding-block: 8px;
+    padding-inline: 32px;
+    border: none;
+    display: inline-block;
+}
+
+.signUpFreeButton:hover {
+    transform: scale(1.04);
+    background-color: var(--background-highlight, #f6f6f6);
+}
+
+.footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.textAndButtonDiv {
+    padding: 11px 24px 7px 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    z-index: 1;
 }

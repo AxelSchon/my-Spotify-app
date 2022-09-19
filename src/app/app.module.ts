@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TopNavBarComponent } from './navigation/top-nav-bar/top-nav-bar.component';
 import { SecNavBarComponent } from './navigation/sec-nav-bar/sec-nav-bar.component';
 import { InformationBarComponent } from './navigation/information-bar/information-bar.component';
+import { CardComponent } from './navigation/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
     SecNavBarComponent,
-    InformationBarComponent
+    InformationBarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
