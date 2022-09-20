@@ -11,10 +11,13 @@
     width: 100%;
     cursor: pointer;
     z-index: 1;
+    transition: 0.33s;
 }
 
 .cardContainer:hover {
     background: #212529;
+    transition: 0.33s;
+
 }
 
 .cardImg {
@@ -62,8 +65,12 @@
     background-color: var(--background-highlight,#1ed760);
     cursor: default;
     position: absolute;
+    top: 65%;
     z-index: 2;
     display: none;
+    opacity: 0;
+    transition: 0.33s;
+    box-shadow: 0px 5px 20px 2px #000;
 }
 
 .cardContainer:hover .playButton {
@@ -73,10 +80,6 @@
 .playButton:hover {
     background-color: var(--background-highlight, #1fdf64);
     transform: scale(1.04);
-}
-
-.playIconWrapper {
-    position: absolute;
-    top: 12px;
-    left: 12px;
+    opacity: 1;
+    transition: opacity 0.33s ease-in-out;
 }
