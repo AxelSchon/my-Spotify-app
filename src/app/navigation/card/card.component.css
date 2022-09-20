@@ -9,11 +9,20 @@
     padding: 16px;
     position: relative;
     width: 100%;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.cardImg{
+.cardContainer:hover {
+    background: #212529;
+}
+
+.cardImg {
     height: 166px;
     width: 166px;
+    --card-image-border-radius: clamp(4px, (var(--column-width, 0px) - 32px) * 0.025, 8px);
+    border-radius: var(--card-image-border-radius);
+    width: 100%;
 }
 
 .albumName {
@@ -29,9 +38,45 @@
 .artistName {
     box-sizing: border-box;
     margin-block: 0px;
-    font-size: 0.875rem;
     font-weight: 400;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
     color: var(--text-subdued, #6a6a6a);
     font-style: normal;
+    text-decoration: none;
+}
+
+.artistName:hover {
+    text-decoration: underline;
+}
+
+.playButton {
+    border-radius: 500px;
+    font-size: inherit;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    inline-size: 48px;
+    block-size: 48px;
+    border: none;
+    background-color: var(--background-highlight,#1ed760);
+    cursor: default;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+.cardContainer:hover .playButton {
+    display: block;
+}
+
+.playButton:hover {
+    background-color: var(--background-highlight, #1fdf64);
+    transform: scale(1.04);
+}
+
+.playIconWrapper {
+    position: absolute;
+    top: 12px;
+    left: 12px;
 }
