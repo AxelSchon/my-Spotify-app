@@ -9,7 +9,7 @@ export class CardComponent implements OnInit {
   @Input() img: string;
   @Input() artistName: String;
   @Input() albumName: String;
-  constructor() { 
+  constructor() {
     this.img = "";
     this.artistName = "";
     this.albumName = "";
