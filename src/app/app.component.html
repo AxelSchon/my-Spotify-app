@@ -1,17 +1,16 @@
 <div class="row g-0">
     <div class="col-md-1" style="width: 13%">
-        <app-sec-nav-bar > Loading... </app-sec-nav-bar>
+        <app-sec-nav-bar> Loading... </app-sec-nav-bar>
     </div>
     <div class="col-10" style="width: 87%">
         <app-top-nav-bar> Loading... </app-top-nav-bar>
-        <div class="d-flex">
-        <app-card> Loading... </app-card>
-        <app-card> Loading... </app-card>
-        <app-card> Loading... </app-card>
-        <app-card> Loading... </app-card>
+        <div class = "d-flex" *ngFor="let card of cards">
+            <app-card img = {{card.img}} artistName={{card.artistName}} albumName={{card.albumName}}>
+            Loading...
+        </app-card>
+        </div>
     </div>
-    </div>
-    <div>
-        <app-information-bar class="fixed-bottom"> loading... </app-information-bar>
-    </div>
+</div>
+<div>
+    <app-information-bar class="fixed-bottom"> loading... </app-information-bar>
 </div>

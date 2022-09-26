@@ -17,7 +17,6 @@
 .cardContainer:hover {
     background: #212529;
     transition: 0.33s;
-
 }
 
 .cardImg {
@@ -67,21 +66,20 @@
     position: absolute;
     top: 65%;
     z-index: 2;
-    opacity: 0;
     display: none;
-    transition: 0.33s;
+    transition: opacity 0.33s;
     box-shadow: 0px 5px 20px 2px #000;
+    opacity: 0;
 }
 
 .cardContainer:hover .playButton {
     display: block;
     /*transition doesnt work on when hovering card. Only works on button if i move to .playbButton:hover*/
-    opacity: 1;
-    transition: opacity 0.33s ease-in-out;
+    opacity:  1;
+    transition: opacity 1s;
 }
 
 .playButton:hover {
     background-color: var(--background-highlight, #1fdf64);
     transform: scale(1.04);
-
 }
