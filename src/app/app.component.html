@@ -2,13 +2,16 @@
     <div class="col-md-1" style="width: 13%">
         <app-sec-nav-bar> Loading... </app-sec-nav-bar>
     </div>
-    <div class="col-10" style="width: 87%; background-color: #1c1c1c">
+    <div class="col-10" style="width: 87%; background-color: #121212">
         <app-top-nav-bar> Loading... </app-top-nav-bar>
-        <div class="d-flex"> 
-            <div *ngFor="let card of cards">
-                <app-card img={{card.img}} artistName={{card.artistName}} albumName={{card.albumName}}>
-                    Loading...
-                </app-card>
+        <div class = content>
+            <app-card-header> Loading... </app-card-header>
+            <div class="d-flex">
+                <div *ngFor="let card of cards">
+                    <app-card img={{card.img}} artistName={{card.artistName}} albumName={{card.albumName}}>
+                        Loading...
+                    </app-card>
+                </div>
             </div>
         </div>
     </div>

@@ -7,6 +7,7 @@ import { TopNavBarComponent } from './navigation/top-nav-bar/top-nav-bar.compone
 import { SecNavBarComponent } from './navigation/sec-nav-bar/sec-nav-bar.component';
 import { InformationBarComponent } from './navigation/information-bar/information-bar.component';
 import { CardComponent } from './navigation/card/card.component';
+import { CardHeaderComponent } from './navigation/card-header/card-header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CardComponent } from './navigation/card/card.component';
     TopNavBarComponent,
     SecNavBarComponent,
     InformationBarComponent,
-    CardComponent
+    CardComponent,
+    CardHeaderComponent
   ],
   imports: [
     BrowserModule,

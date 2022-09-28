@@ -1,0 +1,5 @@
+.content {
+    grid-gap: 24px;
+    display: grid;
+    padding-top: 24px;
+}
