@@ -35,7 +35,31 @@
     color: #ffff;
 }
 
-.text:hover{
-    text-decoration:underline;
+.text:hover {
+    text-decoration: underline;
     text-decoration-thickness: 1px;
+}
+
+.linkContainer {
+    margin-left: 8px;
+    background: transparent;
+    color: #b3b3b3;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.span {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: inherit;
+}
+
+.span:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
