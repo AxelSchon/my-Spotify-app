@@ -8,6 +8,8 @@ import { SecNavBarComponent } from './navigation/sec-nav-bar/sec-nav-bar.compone
 import { InformationBarComponent } from './navigation/information-bar/information-bar.component';
 import { CardComponent } from './navigation/card/card.component';
 import { CardHeaderComponent } from './navigation/card-header/card-header.component';
+import { SearchLayoutComponent } from './search-layout/search-layout.component';
+import { HomeLayoutComponent } from './home-layout/home-layout.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CardHeaderComponent } from './navigation/card-header/card-header.compon
     SecNavBarComponent,
     InformationBarComponent,
     CardComponent,
-    CardHeaderComponent
+    CardHeaderComponent,
+    SearchLayoutComponent,
+    HomeLayoutComponent
   ],
   imports: [
     BrowserModule,

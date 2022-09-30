@@ -1,0 +1,36 @@
+.content {
+    --grid-gap: 24px;
+    --column-count: 7;
+    --column-width: 198px;
+    display: grid;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.cardSpacing {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    grid-auto-rows: 0;
+    grid-template-rows: 1fr;
+    overflow-y: hidden;
+}
+
+.cardAndHeaderSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 16px;
+    min-height: 300px;
+    min-width: 100%;
+    position: relative;
+}
+
+.cardHeader {
+    margin-bottom: 16px;
+}
