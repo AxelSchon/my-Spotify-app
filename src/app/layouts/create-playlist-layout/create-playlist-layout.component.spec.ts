@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CreatePlaylistComponent } from './create-playlist.component';
+import { CreatePlaylistLayoutComponent } from './create-playlist-layout.component';
 
 describe('CreatePlaylistComponent', () => {
-  let component: CreatePlaylistComponent;
-  let fixture: ComponentFixture<CreatePlaylistComponent>;
+  let component: CreatePlaylistLayoutComponent;
+  let fixture: ComponentFixture<CreatePlaylistLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CreatePlaylistComponent ]
+      declarations: [ CreatePlaylistLayoutComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CreatePlaylistComponent);
+    fixture = TestBed.createComponent(CreatePlaylistLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

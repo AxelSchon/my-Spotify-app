@@ -8,11 +8,11 @@ import { SecNavBarComponent } from './navigation/sec-nav-bar/sec-nav-bar.compone
 import { InformationBarComponent } from './navigation/information-bar/information-bar.component';
 import { CardComponent } from './navigation/card/card.component';
 import { CardHeaderComponent } from './navigation/card-header/card-header.component';
-import { SearchLayoutComponent } from './search-layout/search-layout.component';
-import { HomeLayoutComponent } from './home-layout/home-layout.component';
-import { YourLibraryComponent } from './layouts/your-library/your-library.component';
-import { LikedSongsComponent } from './layouts/liked-songs/liked-songs.component';
-import { CreatePlaylistComponent } from './layouts/create-playlist/create-playlist.component';
+import { SearchLayoutComponent } from './layouts/search-layout/search-layout.component';
+import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
+import { CreatePlaylistLayoutComponent } from './layouts/create-playlist-layout/create-playlist-layout.component';
+import { LikedSongsLayoutComponent } from './layouts/liked-songs-layout/liked-songs.component';
+import { YourLibraryLayoutComponent } from './layouts/your-library-layout/your-library.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +24,9 @@ import { CreatePlaylistComponent } from './layouts/create-playlist/create-playli
     CardHeaderComponent,
     SearchLayoutComponent,
     HomeLayoutComponent,
-    YourLibraryComponent,
-    LikedSongsComponent,
-    CreatePlaylistComponent
+    YourLibraryLayoutComponent,
+    LikedSongsLayoutComponent,
+    CreatePlaylistLayoutComponent
   ],
   imports: [
     BrowserModule,
