@@ -22,3 +22,22 @@
             - added export cards: cardModel[] = []
             - added constructor
   }
+
+  10/04/22
+    - Main Features:
+        - Created layout components:
+            - album-layout
+            - artist-page-layout
+            - create-playlist-layout
+            - home-layout
+            - liked-songs-layout
+            - search-layout
+            - your-library-layout   
+        - Within each layout
+            - added navbar
+                - did not include this is app.component.html becuse nav bar will have to change slightly between layouts
+                    - especially within search layout
+        - App component
+            - removed most of the html except for the sec-nav-bar   
+                - sec-nav-bar is a feature which holds contant through all pages in Spotify
+            - added routing
