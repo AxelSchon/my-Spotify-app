@@ -1,0 +1,72 @@
+.circularButton {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    height: 32px;
+    justify-content: center;
+    position: relative;
+    width: 32px;
+    margin-left: 20px;
+}
+
+.SignUpButton {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    background-color: transparent;
+    border: 0px none;
+    border-radius: 500px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--text-subdued, #a6a6a6);
+    min-inline-size: 0px;
+    padding-block: 8px;
+    min-block-size: 48px;
+    padding-inline: 32px;
+    padding-inline-start: 32px;
+    display: inline-flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.SignUpButton:hover {
+    transform: scale(1.04);
+    color: #fff;
+}
+
+.LogInButton {
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--background-base, #ffffff);
+    border-radius: 500px;
+    font-size: 1rem;
+    font-weight: 700;
+    min-block-size: 48px;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    padding-block: 8px;
+    padding-inline: 32px;
+    border: none;
+    cursor: default;
+}
+
+.LogInButton:hover {
+    transform: scale(1.04);
+    background-color: var(--background-highlight, #f6f6f6);
+}
+
+#topNavbar {
+    opacity: 06;
+    background-color: #101010;
+    margin-left: auto;
+}

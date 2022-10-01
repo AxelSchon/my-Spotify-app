@@ -15,6 +15,7 @@ import { LikedSongsLayoutComponent } from './layouts/liked-songs-layout/liked-so
 import { YourLibraryLayoutComponent } from './layouts/your-library-layout/your-library.component';
 import { AlbumLayoutComponent } from './layouts/album-layout/album-layout.component';
 import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-page-layout.component';
+import { SearchNavBarComponent } from './layouts/search-layout/search-components/search-nav-bar/search-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-p
     LikedSongsLayoutComponent,
     CreatePlaylistLayoutComponent,
     AlbumLayoutComponent,
-    ArtistPageLayoutComponent
+    ArtistPageLayoutComponent,
+    SearchNavBarComponent
   ],
   imports: [
     BrowserModule,
