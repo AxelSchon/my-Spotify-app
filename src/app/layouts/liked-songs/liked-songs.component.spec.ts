@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchLayoutComponent } from './search-layout.component';
+import { LikedSongsComponent } from './liked-songs.component';
 
-describe('SearchLayoutComponent', () => {
-  let component: SearchLayoutComponent;
-  let fixture: ComponentFixture<SearchLayoutComponent>;
+describe('LikedSongsComponent', () => {
+  let component: LikedSongsComponent;
+  let fixture: ComponentFixture<LikedSongsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchLayoutComponent ]
+      declarations: [ LikedSongsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SearchLayoutComponent);
+    fixture = TestBed.createComponent(LikedSongsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

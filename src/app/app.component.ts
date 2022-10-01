@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { cardModel } from './navigation/Models/card.model';
-import { card_list } from './navigation/Models/card_list';
 
 @Component({
   selector: 'app-root',

@@ -10,6 +10,9 @@ import { CardComponent } from './navigation/card/card.component';
 import { CardHeaderComponent } from './navigation/card-header/card-header.component';
 import { SearchLayoutComponent } from './search-layout/search-layout.component';
 import { HomeLayoutComponent } from './home-layout/home-layout.component';
+import { YourLibraryComponent } from './layouts/your-library/your-library.component';
+import { LikedSongsComponent } from './layouts/liked-songs/liked-songs.component';
+import { CreatePlaylistComponent } from './layouts/create-playlist/create-playlist.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { HomeLayoutComponent } from './home-layout/home-layout.component';
     CardComponent,
     CardHeaderComponent,
     SearchLayoutComponent,
-    HomeLayoutComponent
+    HomeLayoutComponent,
+    YourLibraryComponent,
+    LikedSongsComponent,
+    CreatePlaylistComponent
   ],
   imports: [
     BrowserModule,
