@@ -83,3 +83,7 @@
     background-color: var(--background-highlight, #1fdf64);
     transform: scale(1.04);
 }
+
+.albumLink{
+    text-decoration: none;
+}

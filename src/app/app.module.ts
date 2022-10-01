@@ -13,6 +13,8 @@ import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component
 import { CreatePlaylistLayoutComponent } from './layouts/create-playlist-layout/create-playlist-layout.component';
 import { LikedSongsLayoutComponent } from './layouts/liked-songs-layout/liked-songs.component';
 import { YourLibraryLayoutComponent } from './layouts/your-library-layout/your-library.component';
+import { AlbumLayoutComponent } from './layouts/album-layout/album-layout.component';
+import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-page-layout.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { YourLibraryLayoutComponent } from './layouts/your-library-layout/your-l
     HomeLayoutComponent,
     YourLibraryLayoutComponent,
     LikedSongsLayoutComponent,
-    CreatePlaylistLayoutComponent
+    CreatePlaylistLayoutComponent,
+    AlbumLayoutComponent,
+    ArtistPageLayoutComponent
   ],
   imports: [
     BrowserModule,
