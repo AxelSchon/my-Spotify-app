@@ -16,6 +16,7 @@ import { YourLibraryLayoutComponent } from './layouts/your-library-layout/your-l
 import { AlbumLayoutComponent } from './layouts/album-layout/album-layout.component';
 import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-page-layout.component';
 import { SearchNavBarComponent } from './layouts/search-layout/search-components/search-nav-bar/search-nav-bar.component';
+import { ArtistHeaderComponent } from './layouts/artist-page-layout/navigation/artist-header/artist-header.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SearchNavBarComponent } from './layouts/search-layout/search-components
     CreatePlaylistLayoutComponent,
     AlbumLayoutComponent,
     ArtistPageLayoutComponent,
-    SearchNavBarComponent
+    SearchNavBarComponent,
+    ArtistHeaderComponent
   ],
   imports: [
     BrowserModule,

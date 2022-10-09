@@ -1,27 +1,50 @@
-<nav class="navbar container-fluid" id="topNavbar">
-    <form class="container-fluid">
-  <!--arrow buttons-->
-      <div style="padding-left: 12px;">
-        <button class="circularButton m-2" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a6a6a6" class="bi bi-chevron-left"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.7 08l6-6a.5.5 0 0 1 .708 0z" />
-          </svg>
-        </button>
-        <button class="circularButton mx-2" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a6a6a6" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg>
-        </button>
+<div class="navbarContainer">
+  <header class="navbarHeader">
+    <div class="navbar">
+      <div class="navbarInner"></div>
+    </div>
+    <div style="padding-left: 12px;">
+      <button class="circularButton m-2" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a6a6a6" class="bi bi-chevron-left"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.7 08l6-6a.5.5 0 0 1 .708 0z" />
+        </svg>
+      </button>
+      <button class="circularButton mx-2" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a6a6a6" class="bi bi-chevron-right"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
+    </div>
+    <div class="searchBarWrapper">
+      <div class="searchBarContainer">
+        <div class="searchBar">
+          <form role="search">
+            <input class="input" style="color: rgb(0, 0, 0);"
+              maxlength="800" autocorrect="off"
+              autocapitalize="none" spellcheck="false" placeholder="What do you want to listen to?"
+              data-testid="search-input" value="">
+          </form>
+          <div class="textContainerContainer">
+            <span class="textContainer">
+              <svg role="img" height="24" width="24" class="svg" aria-hidden="true"
+                viewBox="0 0 24 24">
+                <path
+                  d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z">
+                </path>
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
-
-      <!--sign up and Log in buttons-->
-      <div>
-        <button type="button" class="SignUpButton ">Sign up</button>
-        <button type="button" class="LogInButton">Log in</button>
-      </div>
-    </form>
-  </nav>
+    </div>
+    <div class="allign"></div>
+    <div class="loginSignupWrapper">
+      <button type="button" class="SignUpButton ">Sign up</button>
+      <button type="button" class="LogInButton">Log in</button>
+    </div>
+  </header>
+</div>

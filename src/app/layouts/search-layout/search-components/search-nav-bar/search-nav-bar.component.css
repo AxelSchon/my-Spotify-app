@@ -1,3 +1,52 @@
+.navbarContainer {
+    grid-row-start: main-view;
+    grid-row-end: main-view;
+    grid-column-start: main-view;
+    grid-column-end: main-view;
+    height: 64px;
+    min-width: 0;
+}
+
+.navbarHeader {
+    padding: 16px 32px;
+    padding-inline-end: 32px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-padding-end: 16px;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    height: 64px;
+    justify-content: space-between;
+    padding: 16px;
+    padding-inline-end: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    opacity: 0;
+    background-color: #121212;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color .25s;
+    white-space: nowrap;
+}
+
+.navbarInner {
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+}
+
 .circularButton {
     align-items: center;
     background-color: rgba(0, 0, 0, .7);
@@ -10,6 +59,79 @@
     position: relative;
     width: 32px;
     margin-left: 20px;
+}
+
+.searchBarWrapper {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.searchBarContainer {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    pointer-events: none;
+}
+
+.searchBar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 364px;
+    flex: 0 1 364px;
+    position: relative;
+    pointer-events: auto;
+}
+
+.input {
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    border: 0;
+    border-radius: 500px;
+    height: 40px;
+    padding: 6px 48px;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.textContainerContainer {
+    -webkit-box-align: center;
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    left: 12px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 0;
+}
+
+.textContainer {
+    -webkit-box-flex: 1;
+    color: #121212;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.svg {
+    fill: currentcolor;
+    display: block;
+}
+
+.allign {
+    display: flex;
+    gap: 8px;
+}
+
+.loginSignupWrapper {
+    padding: 0;
+}
+
+.loginSignupWrapper:focus{
+    outline: none;
 }
 
 .SignUpButton {
@@ -63,10 +185,4 @@
 .LogInButton:hover {
     transform: scale(1.04);
     background-color: var(--background-highlight, #f6f6f6);
-}
-
-#topNavbar {
-    opacity: 06;
-    background-color: #101010;
-    margin-left: auto;
 }

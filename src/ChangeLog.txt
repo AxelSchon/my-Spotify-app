@@ -1,29 +1,31 @@
-09/26/22
-    - Main Features:
-        - Added card_list.ts 
-            - Contains information or each seperate card
-        - Added card.model.ts
-            - Defines model of what card must contain
-        - Within card.component
-            - Added import:
-                 Input
-            - Added inputs:
-                @Input() img: string;
-                @Input() artistName: String;
-                @Input() albumName: String;
-            - Added constructor:
-                constructor() {
-                  this.img = "";
-                  this.artistName = "";
-                  this.albumName = "";
-        - Within app.component.html
-            - changed app-card from manual input into *ngFor loop format
-        - Within app.component.ts
-            - added export cards: cardModel[] = []
-            - added constructor
-  }
+Lab 3:
+    09/26/22
+        - Main Features:
+            - Added card_list.ts 
+                - Contains information or each seperate card
+            - Added card.model.ts
+                - Defines model of what card must contain
+            - Within card.component
+                - Added import:
+                    Input
+                - Added inputs:
+                    @Input() img: string;
+                    @Input() artistName: String;
+                    @Input() albumName: String;
+                - Added constructor:
+                    constructor() {
+                    this.img = "";
+                    this.artistName = "";
+                    this.albumName = "";
+            - Within app.component.html
+                - changed app-card from manual input into *ngFor loop format
+            - Within app.component.ts
+                - added export cards: cardModel[] = []
+                - added constructor
+    }
 
-  10/04/22
+Lab 4:
+    10/04/22
     - Main Features:
         - Created layout components:
             - album-layout
@@ -41,3 +43,24 @@
             - removed most of the html except for the sec-nav-bar   
                 - sec-nav-bar is a feature which holds contant through all pages in Spotify
             - added routing
+
+Lab 5:
+    10/09/22
+    -Main Features:
+        - Created 3 new components on 2 diferent pages :
+            - artist-page-layout  
+                - artist-header component
+                    - displays artist verified text and verified logo   
+                    - displays artist name in large font
+                    - displays monthly listeners
+                    - displays background img of artist
+            - search-page-layout
+                - added search-nav-bar
+                    - search navbar completely refactors top-nav-bar. 
+                        - not going to implement top-nav-bar refactor until I know it properly interacts with search-page-layout
+]                    - added search functionality
+
+                
+                    
+                    
+                    
