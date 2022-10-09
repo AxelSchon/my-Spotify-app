@@ -3,7 +3,8 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    background-image: url(https://i.scdn.co/image/ab6761860000101623f740d8024b6e88db9d7eb8);
+    background-image: linear-gradient(to bottom, rgba(239, 187, 207, 0.3), rgba(0, 0, 0, 0.4)),
+    url('https://i.scdn.co/image/ab6761860000101623f740d8024b6e88db9d7eb8');
     background-size: cover  ;
     height: 40vh;
     max-height: none;
@@ -17,7 +18,6 @@
     position: relative;
     padding-bottom: 24px;
 
-    --background-noise: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4=");
 
 }
 
