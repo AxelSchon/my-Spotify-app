@@ -17,6 +17,7 @@ import { AlbumLayoutComponent } from './layouts/album-layout/album-layout.compon
 import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-page-layout.component';
 import { SearchNavBarComponent } from './layouts/search-layout/search-components/search-nav-bar/search-nav-bar.component';
 import { ArtistHeaderComponent } from './layouts/artist-page-layout/navigation/artist-header/artist-header.component';
+import { PlayBarComponent } from './layouts/artist-page-layout/navigation/play-bar/play-bar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ArtistHeaderComponent } from './layouts/artist-page-layout/navigation/a
     AlbumLayoutComponent,
     ArtistPageLayoutComponent,
     SearchNavBarComponent,
-    ArtistHeaderComponent
+    ArtistHeaderComponent,
+    PlayBarComponent
   ],
   imports: [
     BrowserModule,

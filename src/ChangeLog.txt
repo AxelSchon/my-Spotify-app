@@ -54,11 +54,18 @@ Lab 5:
                     - displays artist name in large font
                     - displays monthly listeners
                     - displays background img of artist
+                - play-bar component
+                    - displays play button
+                    - displays follow button
+                    - displays more options button
+
             - search-page-layout
                 - added search-nav-bar
                     - search navbar completely refactors top-nav-bar. 
                         - not going to implement top-nav-bar refactor until I know it properly interacts with search-page-layout
-]                    - added search functionality
+                    - added search functionality
+                
+
 
                 
                     
