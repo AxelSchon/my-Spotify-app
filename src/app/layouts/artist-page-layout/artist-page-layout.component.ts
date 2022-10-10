@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { popular_sectionModel } from './navigation/Models/popular_section.mode';
+import { popular_section_list } from './navigation/Models/popular_section_list';
 
 @Component({
   selector: 'app-artist-page-layout',
@@ -7,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistPageLayoutComponent implements OnInit {
 
-  constructor() { }
+  popular_sections: popular_sectionModel[] = [];
+  
+  constructor() {
+    for (var popular_section of popular_section_list){
+      this.popular_sections.push(popular_section);
+    }
+
+  }
 
   ngOnInit(): void {
   }
