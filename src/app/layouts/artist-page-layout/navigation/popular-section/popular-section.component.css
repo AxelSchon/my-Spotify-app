@@ -1,0 +1,345 @@
+.popularContainer {
+    --column-width: 198px;
+    --column-count: 7;
+    --grid-gap: 24px;
+    margin-bottom: 40px;
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+}
+
+.popularColumns {
+    --column-count: 7;
+    grid-column: span min(var(--column-count), 6);
+    grid-row-start: span 3;
+    grid-row-end: auto;
+}
+
+.popularHeader {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: #ffffff;
+}
+
+.colCount {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.presentation {
+    contain: layout size;
+    position: relative;
+}
+
+.top {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+
+.rowPlaceholder {
+    height: calc(100% - 560px);
+    grid-template-columns: [index] 16px [first] 4fr [var1] 2fr [last] minmax(120px, 1fr);
+    grid-gap: 16px;
+    display: grid;
+    padding: 0 16px;
+}
+
+.colNumber {
+    background-position-x: -12px;
+    width: 16px;
+    background-image: url(https://open.spotifycdn.com/cdn/images/tracklist-placeholder.b3518b89.png);
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    justify-self: end;
+}
+
+.songName {
+    background-position-x: -44px;
+    width: 195px;
+    background-image: url(https://open.spotifycdn.com/cdn/images/tracklist-placeholder.b3518b89.png);
+    justify-self: start;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.monthlyListeners {
+    background-position-x: -693px;
+    width: 120px;
+    background-image: url(https://open.spotifycdn.com/cdn/images/tracklist-placeholder.b3518b89.png);
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    justify-self: start;
+}
+
+.playTime {
+    background-position-x: -1175px;
+    width: 120px;
+    background-image: url(https://open.spotifycdn.com/cdn/images/tracklist-placeholder.b3518b89.png);
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    grid-column: last;
+    justify-self: end;
+}
+
+.row {
+    grid-template-columns: [index] 16px [first] 4fr [var1] 2fr [last] minmax(120px, 1fr);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    height: 56px;
+    position: relative;
+    grid-gap: 16px;
+    display: grid;
+    padding: 0 16px;
+}
+
+.row:hover{
+    background-color: hsla(0,0%,100%,.1);
+}
+
+.colNumberCell {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    justify-self: end;
+}
+
+.colNumberContainer {
+    color: #b3b3b3;
+    display: inline-block;
+    height: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    position: relative;
+    width: 16px;
+}
+
+.actualColNumber {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: inherit;
+    position: absolute;
+    top: -4px;
+    font-variant: tabular-nums;
+    right: .25em;
+}
+
+.row:hover .actualColNumber{
+    display: none;
+}
+
+.playSongButton {
+    opacity: 0;
+    pointer-events: none;
+    
+    position: absolute;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    fill: #fff;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    height: 24px;
+    width: 24px;
+    cursor: default;
+}
+
+.row:hover .playSongButton{
+    opacity: 1;
+    pointer-events: auto;
+    position: center ;
+}
+
+.songImageWrapper {
+    justify-self: start;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.songNameAndImageWrapper {
+    justify-self: start;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.img {
+    margin-right: 16px;
+    background-color: #282828;
+    flex-shrink: 0;
+    user-select: none;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.songNameWrapper {
+    padding-right: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    display: grid;
+    grid-template: "title title""badges subtitle" /auto 1fr;
+}
+
+.actualSongName {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: var(--text-base, #ffffff);
+    grid-area: title;
+    justify-self: start;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: unset;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.explicitContainer {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: var(--text-subdued, #6a6a6a);
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    display: inline-flex;
+    grid-area: badges;
+    justify-content: center;
+}
+
+.explicit {
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, .6);
+    border-radius: 2px;
+    color: #121212;
+    display: inline-flex;
+    font-size: 9px;
+    height: 16px;
+    justify-content: center;
+    line-height: 10px;
+    padding: 3px 5px;
+    text-transform: uppercase;
+}
+
+.monthlyListenersWrapper {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    justify-self: start;
+}
+
+.actualMonthlyListeners {
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: #b3b3b3;
+    font-feature-settings: "ss05" on;
+    text-align: right;
+    width: 11ch;
+
+}
+
+.playTimeWrapper {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    grid-column: last;
+    justify-self: end;
+}
+
+.heartButton {
+    margin-right: 16px;
+    display: none;
+    opacity: 0;
+    background: transparent;
+    border: 0;
+    fill: hsla(0, 0%, 100%, .7);
+    display: flex;
+    padding: 0;
+}
+
+.row:hover .heartButton{
+    display: inline-block;
+    opacity: 1;
+}
+
+.heartButton:hover {
+    opacity: 1;
+    fill: #fff;
+}
+
+.heartSvg {
+    --column-width: 198px;
+    --grid-gap: 24px;
+}
+
+.actualRunTime {
+    margin-right: 16px;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: var(--text-subdued, #a7a7a7);
+    -webkit-box-pack: end;
+    display: flex;
+    font-variant-numeric: tabular-nums;
+    justify-content: flex-end;
+    width: 5ch;
+}
+
+.moreOptionButton {
+    opacity: 0;
+    display: none;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    fill: hsla(0, 0%, 100%, .7);
+
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.row:hover .moreOptionButton{
+    display: inline-block;
+    opacity: 1;
+}
+
+.moreOptionButton:hover {
+    opacity: 1;
+    fill: #fff;
+}

@@ -18,6 +18,7 @@ import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-p
 import { SearchNavBarComponent } from './layouts/search-layout/search-components/search-nav-bar/search-nav-bar.component';
 import { ArtistHeaderComponent } from './layouts/artist-page-layout/navigation/artist-header/artist-header.component';
 import { PlayBarComponent } from './layouts/artist-page-layout/navigation/play-bar/play-bar.component';
+import { PopularSectionComponent } from './layouts/artist-page-layout/navigation/popular-section/popular-section.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PlayBarComponent } from './layouts/artist-page-layout/navigation/play-b
     ArtistPageLayoutComponent,
     SearchNavBarComponent,
     ArtistHeaderComponent,
-    PlayBarComponent
+    PlayBarComponent,
+    PopularSectionComponent
   ],
   imports: [
     BrowserModule,
