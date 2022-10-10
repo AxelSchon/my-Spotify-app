@@ -45,27 +45,47 @@ Lab 4:
             - added routing
 
 Lab 5:
-    10/09/22
     -Main Features:
         - Created 3 new components on 2 diferent pages :
             - artist-page-layout  
-                - artist-header component
+                - artist-header component (10/09/22)
                     - displays artist verified text and verified logo   
                     - displays artist name in large font
                     - displays monthly listeners
                     - displays background img of artist
-                - play-bar component
+                - play-bar component (10/09/22)
                     - displays play button
                     - displays follow button
                     - displays more options button
+                - popular-section: (10/10/22)
+                    -each row created programatically (using ng for loop)
+                        - displays row index
+                        - displays album cover
+                        - displays song name
+                        - displays monthly listeners
+                        - displays play time
+                - about-section (10/11/22)
+                    - displays image of artist
+                    - displays artists world ranking
+                    - displays artists monthly listeners
+                    - displays description of artist
 
             - search-page-layout
-                - added search-nav-bar
+                - added search-nav-bar (10/09/22)
                     - search navbar completely refactors top-nav-bar. 
                         - not going to implement top-nav-bar refactor until I know it properly interacts with search-page-layout
-                    - added search functionality
-                
+                    - added search bar which a user can type into
+                - added genre-card (10/11/22)
+                    - created using ng for loop
+                        - displays background color
+                        - displays img for card
+                        - displays name of card
+                - added browse-all-header (10/11/22)
+                    - header which spaces genre-cards from header and displays "browse all" text
 
+    Bonus Features:
+        - enabled scrolling within content area (sec-nav-bar is fixed to screen)
+                
 
                 
                     

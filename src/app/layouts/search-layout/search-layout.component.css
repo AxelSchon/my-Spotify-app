@@ -1,0 +1,41 @@
+.mainContainer{
+    min-height: calc(-673px + 100vh);
+    isolation: isolate;
+padding-bottom: 32px;
+}
+
+.searchPage{
+    padding: 0 32px;
+    margin: 0;
+max-width: 1955px;
+}
+
+.section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    --shelf-min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    min-height: var(--shelf-min-height);
+    min-width: 100%;
+    position: relative;
+}
+
+.gridMargin{
+    grid-column: 1/-1;
+    margin-top: 48px;
+    padding: 16px 0;
+}
+
+.genreCardContainer {
+    --column-width: 198px;
+    --column-count: 7;
+    --grid-gap: 24px;
+    grid-auto-rows: auto;
+    grid-template-rows: 1fr;
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+
+}

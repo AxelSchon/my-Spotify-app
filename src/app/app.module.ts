@@ -19,6 +19,9 @@ import { SearchNavBarComponent } from './layouts/search-layout/search-components
 import { ArtistHeaderComponent } from './layouts/artist-page-layout/navigation/artist-header/artist-header.component';
 import { PlayBarComponent } from './layouts/artist-page-layout/navigation/play-bar/play-bar.component';
 import { PopularSectionComponent } from './layouts/artist-page-layout/navigation/popular-section/popular-section.component';
+import { GenreCardComponent } from './layouts/search-layout/search-components/genre-card/genre-card.component';
+import { BrowseAllHeaderComponent } from './layouts/search-layout/search-components/browse-all-header/browse-all-header.component';
+import { AboutSectionComponent } from './layouts/artist-page-layout/navigation/about-section/about-section.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { PopularSectionComponent } from './layouts/artist-page-layout/navigation
     SearchNavBarComponent,
     ArtistHeaderComponent,
     PlayBarComponent,
-    PopularSectionComponent
+    PopularSectionComponent,
+    GenreCardComponent,
+    BrowseAllHeaderComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,

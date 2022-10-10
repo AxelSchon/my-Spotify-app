@@ -1,1 +1,18 @@
-<app-search-nav-bar></app-search-nav-bar>
+<app-search-nav-bar>Loading...</app-search-nav-bar>
+<div class="mainContainer">
+    <div class="searchPage">
+        <div class="gridMargin">
+
+            <Section class="section">
+                <app-browse-all-header>Loading...</app-browse-all-header>
+                <div class="genreCardContainer">
+                    <div *ngFor="let genre_card of genre_cards">
+                        <app-genre-card img={{genre_card.img}} name={{genre_card.name}} color={{genre_card.color}}>
+                            Loading...
+                        </app-genre-card>
+                    </div>
+                </div>
+            </Section>
+        </div>
+    </div>
+</div>
