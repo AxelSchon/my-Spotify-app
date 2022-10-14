@@ -85,6 +85,11 @@ Lab 5:
 
     Bonus Features:
         - enabled scrolling within content area (sec-nav-bar is fixed to screen)
+
+- Lab 6
+    - Main Features
+        - converted cards, genre-cards, and popular-section from mock list binding to database binding
+
                 
 
                 
