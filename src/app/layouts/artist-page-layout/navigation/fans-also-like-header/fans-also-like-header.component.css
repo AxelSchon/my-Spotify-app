@@ -1,0 +1,33 @@
+.headerContainer {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.headerWrapper {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    display: block;
+    flex-grow: 1;
+    line-height: normal;
+    min-width: 0;
+}
+
+.header {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: #ffffff;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.header:hover{
+    text-decoration: underline ;
+    text-decoration-thickness: 1px;
+}

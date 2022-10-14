@@ -1,0 +1,37 @@
+<div class="card cardContainer">
+    <div style="height:100%">
+        <div style="margin-bottom: 16px; position: relative;">
+            <div style="--card-color: #171717;">
+                <div style="border: 0; margin: 0; padding: 0;">
+                    <img src={{img}} class="card-img-top cardImg">
+                </div>
+            </div>
+            <div>
+                <button style="right: 8px;" class="playButton">
+                    <span>
+                        <span>
+                            <svg mlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#00000"
+                                class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                            </svg>
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+        <div style="min-height: 62px">
+            <a class="albumLink" routerLink="album-layout">
+                <div class="artistName">
+                    {{artistName}}
+                </div>
+            </a>
+            <div style="font-size: 0.875rem;">
+                <a routerLink="artist-page-layout" class="title" dir="auto" style="position: relative; z-index: 1;">
+                    {{title}}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

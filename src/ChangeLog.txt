@@ -88,7 +88,9 @@ Lab 5:
 
 - Lab 6
     - Main Features
-        - converted cards, genre-cards, and popular-section from mock list binding to database binding
+        - converted cards, genre-cards, and popular-section from mock list binding to database binding (10/14/22)
+        - created artist-card component (10/14/22)
+            - data bindings from database
 
                 
 

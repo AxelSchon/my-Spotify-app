@@ -1,0 +1,84 @@
+.cardContainer {
+    --card-container-border-radius: clamp(4px, (var(--column-width, 0px) - 32px) * 0.025, 8px);
+    -webkit-box-flex: 1;
+    background: #181818;
+    border-radius: calc(var(--card-container-border-radius) + 2px);
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.33s;
+}
+
+.cardContainer:hover {
+    background: #212529;
+    transition: 0.33s;
+}
+
+.cardImg {
+    height: 166px;
+    width: 166px;
+    --card-image-border-radius: clamp(4px, (var(--column-width, 0px) - 32px) * 0.025, 8px);
+    border-radius: 50%;
+}
+
+.artistName {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    padding-block-end: 4px;
+    color: #ffff;
+}
+
+.title {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
+    color: var(--text-subdued, #6a6a6a);
+    font-style: normal;
+    text-decoration: none;
+}
+
+.playButton {
+    border-radius: 500px;
+    font-size: inherit;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    inline-size: 48px;
+    block-size: 48px;
+    border: none;
+    background-color: var(--background-highlight, #1ed760);
+    cursor: default;
+    position: absolute;
+    top: 65%;
+    z-index: 2;
+    display: none;
+    transition: opacity 0.33s;
+    box-shadow: 0px 5px 20px 2px #000;
+    opacity: 0;
+}
+
+.cardContainer:hover .playButton {
+    display: block;
+    /*transition doesnt work on when hovering card. Only works on button if i move to .playbButton:hover*/
+    opacity:  1;
+    transition: opacity 1s;
+}
+
+.playButton:hover {
+    background-color: var(--background-highlight, #1fdf64);
+    transform: scale(1.04);
+}
+
+.albumLink{
+    text-decoration: none;
+}

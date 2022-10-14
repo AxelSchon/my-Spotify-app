@@ -23,6 +23,8 @@ import { PopularSectionComponent } from './layouts/artist-page-layout/navigation
 import { GenreCardComponent } from './layouts/search-layout/search-components/genre-card/genre-card.component';
 import { BrowseAllHeaderComponent } from './layouts/search-layout/search-components/browse-all-header/browse-all-header.component';
 import { AboutSectionComponent } from './layouts/artist-page-layout/navigation/about-section/about-section.component';
+import { ArtistCardComponent } from './layouts/artist-page-layout/navigation/artist-card/artist-card.component';
+import { FansAlsoLikeHeaderComponent } from './layouts/artist-page-layout/navigation/fans-also-like-header/fans-also-like-header.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { AboutSectionComponent } from './layouts/artist-page-layout/navigation/a
     PopularSectionComponent,
     GenreCardComponent,
     BrowseAllHeaderComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    ArtistCardComponent,
+    FansAlsoLikeHeaderComponent
   ],
   imports: [
     BrowserModule,
