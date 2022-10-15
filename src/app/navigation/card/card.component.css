@@ -12,6 +12,8 @@
     cursor: pointer;
     z-index: 1;
     transition: 0.33s;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .cardContainer:hover {
@@ -35,6 +37,10 @@
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
     padding-block-end: 4px;
     color: #ffff;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .artistName {
@@ -45,6 +51,8 @@
     color: var(--text-subdued, #6a6a6a);
     font-style: normal;
     text-decoration: none;
+    text-overflow: ellipsis;
+white-space: nowrap;
 }
 
 .artistName:hover {
@@ -85,5 +93,10 @@
 }
 
 .albumLink{
-    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    max-width: 100%;
 }
