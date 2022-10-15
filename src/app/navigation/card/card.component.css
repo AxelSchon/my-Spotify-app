@@ -41,6 +41,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
+    vertical-align: middle;
 }
 
 .artistName {
@@ -48,9 +49,10 @@
     margin-block: 0px;
     font-weight: 400;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, ));
-    color: var(--text-subdued, #6a6a6a);
+    color: var(--text-subdued, #9d9d9d);
     font-style: normal;
     text-decoration: none;
+    overflow: hidden;
     text-overflow: ellipsis;
 white-space: nowrap;
 }
@@ -93,10 +95,8 @@ white-space: nowrap;
 }
 
 .albumLink{
-    overflow: hidden;
     white-space: nowrap;
     display: inline-block;
-    text-overflow: ellipsis; 
     white-space: nowrap;
     max-width: 100%;
 }
