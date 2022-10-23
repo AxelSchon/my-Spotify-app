@@ -95,6 +95,13 @@ Lab 5:
     - Bonus Features
         - increased amount of data for card components (10/14/22)
 
+- Lab 7
+    -Main Features  
+        - I implemented Lab 7 features in lab 6
+        - I completed lab 8 for lab 7 (10/23/22)
+            - set up my app for web deployment
+
+
                 
                     
                     
