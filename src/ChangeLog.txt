@@ -92,7 +92,8 @@ Lab 5:
         - created artist-card component (10/14/22)
             - data bindings from database
 
-                
+    - Bonus Features
+        - increased amount of data for card components (10/14/22)
 
                 
                     
