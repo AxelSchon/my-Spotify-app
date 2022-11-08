@@ -25,6 +25,8 @@ import { BrowseAllHeaderComponent } from './layouts/search-layout/search-compone
 import { AboutSectionComponent } from './layouts/artist-page-layout/navigation/about-section/about-section.component';
 import { ArtistCardComponent } from './layouts/artist-page-layout/navigation/artist-card/artist-card.component';
 import { FansAlsoLikeHeaderComponent } from './layouts/artist-page-layout/navigation/fans-also-like-header/fans-also-like-header.component';
+import { AddProductComponent } from './navigation/add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,12 +51,14 @@ import { FansAlsoLikeHeaderComponent } from './layouts/artist-page-layout/naviga
     BrowseAllHeaderComponent,
     AboutSectionComponent,
     ArtistCardComponent,
-    FansAlsoLikeHeaderComponent
+    FansAlsoLikeHeaderComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

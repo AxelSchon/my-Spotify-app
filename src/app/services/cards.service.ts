@@ -19,4 +19,8 @@ export class CardsService{
     getCard(index: number){
         return this.http.get<cardModel>(this.baseUrl + 'cards' + '/' + index + '.json');       
     }
+
+    addProduct(card: cardModel){
+        this.http.post<cardModel []>(this.baseUrl + this.cardsEndpoint, card);
+    }
 }

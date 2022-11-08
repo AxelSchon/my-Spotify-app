@@ -7,15 +7,17 @@ import { YourLibraryLayoutComponent } from './layouts/your-library-layout/your-l
 import { SearchLayoutComponent } from './layouts/search-layout/search-layout.component';
 import { AlbumLayoutComponent } from './layouts/album-layout/album-layout.component';
 import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-page-layout.component';
+import { AddProductComponent } from './navigation/add-product/add-product.component';
 
 const routes: Routes = [
   { path: '', component: HomeLayoutComponent},
-  {path: "search", component: SearchLayoutComponent },
-  {path: "your-library", component: YourLibraryLayoutComponent},
+  { path: "search", component: SearchLayoutComponent },
+  { path: "your-library", component: YourLibraryLayoutComponent},
   { path: 'liked-songs', component: LikedSongsLayoutComponent},
   { path: 'create-playlist', component: CreatePlaylistLayoutComponent},
   { path: 'album-layout', component: AlbumLayoutComponent},  
   { path: 'artist-page-layout', component: ArtistPageLayoutComponent},
+  { path: 'admin', component: AddProductComponent},
 
 
 ];

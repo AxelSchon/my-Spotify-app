@@ -100,6 +100,12 @@ Lab 5:
         - I implemented Lab 7 features in lab 6
         - I completed lab 8 for lab 7 (10/23/22)
             - set up my app for web deployment
+        
+- Lab 8
+    - Main Features
+        - Added new admin page
+            - No direct link. Must add /admin in url
+            - contains 3 inputs for artistName, albumName, and img (11/12/22)
 
 
                 
