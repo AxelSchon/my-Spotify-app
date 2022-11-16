@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "my-spotify-app-26c53"
+  },
+  "targets": {
+    "my-spotify-app-26c53": {
+      "hosting": {
+        "hello-world-app": [
+          "my-spotify-app-26c53"
+        ]
+      }
+    }
   }
 }

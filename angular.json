@@ -97,7 +97,17 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []            
+            "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "hello-world-app:build:production",
+            "firebaseProject": "my-spotify-app-26c53",
+            "firebaseHostingSite": "my-spotify-app-26c53"
           }
         }
       }

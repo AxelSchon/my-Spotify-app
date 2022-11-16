@@ -3,6 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebase: {
+    projectId: 'my-spotify-app-26c53',
+    appId: '1:813204845692:web:de9d8440f01d667328c5f9',
+    databaseURL: 'https://my-spotify-app-26c53-default-rtdb.firebaseio.com',
+    storageBucket: 'my-spotify-app-26c53.appspot.com',
+    apiKey: 'AIzaSyAj3EiILSsWFoFQNQoAjvOfGKd7lf6Sr6o',
+    authDomain: 'my-spotify-app-26c53.firebaseapp.com',
+    messagingSenderId: '813204845692',
+    measurementId: 'G-48QZ265ZZG',
+  },
   production: false
 };
 

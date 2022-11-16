@@ -27,6 +27,9 @@ import { ArtistCardComponent } from './layouts/artist-page-layout/navigation/art
 import { FansAlsoLikeHeaderComponent } from './layouts/artist-page-layout/navigation/fans-also-like-header/fans-also-like-header.component';
 import { AddProductComponent } from './navigation/add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -58,6 +61,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebase),
     FormsModule
   ],
   providers: [],

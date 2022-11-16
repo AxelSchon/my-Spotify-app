@@ -18,7 +18,7 @@ export class AddProductComponent implements OnInit {
   addProduct(card:cardModel) {
     console.log("You can add product.");
     console.log(card);
-    this.cs.addProduct(card)
+    //this.cs.addProduct(card)
   }
 
 
