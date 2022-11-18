@@ -4,21 +4,20 @@ import { cardModel } from "../navigation/Models/card.model";
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable(
-    {providedIn: 'root'}
+    { providedIn: 'root' }
 )
-export class CardsService{
+export class CardsService {
     private baseUrl: string = "https://my-spotify-app-26c53-default-rtdb.firebaseio.com/";
     private cardsEndpoint: string = "cards.json";
 
-    constructor(private db:AngularFireDatabase){
+    constructor(private db: AngularFireDatabase) {
     }
 
-    getCards(){
+    getCards() {
         return this.db.list<cardModel>("cards").valueChanges();
     }
 
-    addCard(card:cardModel){
+    addCard(card: cardModel) {
         this.db.list<cardModel>("cards").push(card);
     }
-
 }

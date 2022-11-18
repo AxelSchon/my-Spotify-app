@@ -2,7 +2,7 @@
 <div class=content>
     <section class="cardAndHeaderSection">
         <app-card-header class="cardHeader"> Loading... </app-card-header>
-        <div class="cardSpacing">
+        <div class="cardSpacing"> <!-- Change overflow in Card Spacing to overflow-y: hidden; to remove second row -->
             <div *ngFor="let card of cards">
                 <app-card img={{card.img}} artistName={{card.artistName}} albumName={{card.albumName}}>
                     Loading...
