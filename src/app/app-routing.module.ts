@@ -8,6 +8,7 @@ import { SearchLayoutComponent } from './layouts/search-layout/search-layout.com
 import { AlbumLayoutComponent } from './layouts/album-layout/album-layout.component';
 import { ArtistPageLayoutComponent } from './layouts/artist-page-layout/artist-page-layout.component';
 import { AddProductComponent } from './navigation/add-product/add-product.component';
+import { AuthComponent } from './auth/auth/auth.component';
 
 const routes: Routes = [
   { path: '', component: HomeLayoutComponent},
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'album-layout', component: AlbumLayoutComponent},  
   { path: 'artist-page-layout', component: ArtistPageLayoutComponent},
   { path: 'admin', component: AddProductComponent},
-
+  { path: 'auth', component: AuthComponent},
 
 ];
 

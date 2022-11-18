@@ -30,6 +30,7 @@ import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './auth/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     AboutSectionComponent,
     ArtistCardComponent,
     FansAlsoLikeHeaderComponent,
-    AddProductComponent
+    AddProductComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
