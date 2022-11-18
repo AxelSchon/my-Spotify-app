@@ -16,8 +16,4 @@ export class GenreCardsService{
     getGenreCards(){
         return this.db.list<genre_cardModel>("genre-cards").valueChanges();
     }
-
-    getGenreCard(index: number){
-        return this.db.list<genre_cardModel>("genre-cards").valueChanges();      
-    }
 }
